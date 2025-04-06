@@ -6,7 +6,7 @@ herzlich willkommen zu diesem Projekt! 😊 Keine Sorge, wenn Begriffe wie "Git"
 
 **Das Ziel:** Du sollst am Ende in der Lage sein:
 1.  Die notwendigen Programme auf deinem Computer zu installieren.
-2.  Den Code der Webseite von GitHub herunterzuladen.
+2.  Den Code der Webseite ("binebastelt") von GitHub herunterzuladen.
 3.  Die Webseite lokal auf deinem Computer zum Testen und Bearbeiten zu starten.
 4.  Zu verstehen, wo du Änderungen am Code (Texte, Bilder, Design) machen kannst.
 
@@ -20,7 +20,7 @@ Bevor wir mit der Webseite selbst anfangen können, brauchen wir ein paar kosten
 
 **1. Node.js und npm installieren (Unser Werkzeugkasten)**
 
-*   **Was ist das?** Node.js ist eine Umgebung, die es uns erlaubt, JavaScript-Code außerhalb des Webbrowsers auszuführen. `npm` (Node Package Manager) kommt automatisch mit Node.js und ist ein Werkzeug, um andere Hilfsprogramme und Code-Bibliotheken (genannt "Pakete" oder "dependencies"), die unser Projekt braucht, einfach zu installieren und zu verwalten.
+*   **Was ist das?** Node.js ist eine Umgebung, die es uns erlaubt, JavaScript-Code außerhalb des Webbrowsers auszuführen. `npm` (Node Package Manager) kommt automatisch mit Node.js und ist ein Werkzeug, um andere Hilfsprogramme und Code-Bibliotheken (genannt "Pakete" oder "dependencies"), die unser Projekt "binebastelt" braucht, einfach zu installieren und zu verwalten.
 *   **Anleitung:**
     *   Gehe zur offiziellen Webseite: [https://nodejs.org/](https://nodejs.org/)
     *   Du solltest dort zwei Buttons sehen. Wähle die Version mit **"LTS"** (Long Term Support). Das ist die stabile, empfohlene Version.
@@ -62,40 +62,40 @@ Du brauchst keine Angst davor zu haben! Wir benutzen nur ein paar wenige, einfac
 
 ---
 
-## Teil 2: Den Projekt-Code holen 📂
+## Teil 2: Den Projekt-Code holen ("binebastelt" herunterladen) 📂
 
 Jetzt holen wir uns den eigentlichen Code für die Webseite von GitHub auf deinen Computer.
 
-1.  **Ordner auswählen:** Überlege dir, wo auf deinem Computer du das Projekt speichern möchtest (z.B. in deinem "Dokumente"-Ordner oder in einem speziellen "Projekte"-Ordner).
+1.  **Ordner auswählen:** Überlege dir, wo auf deinem Computer du das Projekt speichern möchtest (z.B. in deinem "Dokumente"-Ordner oder du erstellst einen neuen Ordner namens "Projekte").
 2.  **Terminal öffnen:** Öffne das Terminal (wie oben beschrieben).
 3.  **In den Ordner navigieren:** Wir müssen dem Terminal sagen, dass es in dem Ordner arbeiten soll, den du dir ausgesucht hast. Das geht mit dem Befehl `cd` (change directory).
-    *   **Beispiel Windows:** Wenn du einen Ordner "Projekte" direkt auf Laufwerk C: hast, tippe: `cd C:\Projekte` und drücke Enter. Wenn er in deinen Dokumenten liegt: `cd C:\Users\[DeinBenutzername]\Documents\Projekte` (Ersetze `[DeinBenutzername]`).
-    *   **Beispiel Mac:** Wenn du einen Ordner "Projekte" in deinem Benutzerverzeichnis hast, tippe: `cd ~/Projekte` und drücke Enter. Wenn er in Dokumenten liegt: `cd ~/Documents/Projekte`.
-    *   *Tipp:* Du kannst oft auch `cd ` (mit Leerzeichen am Ende) tippen und dann den Ordner aus deinem Datei-Explorer direkt ins Terminal-Fenster ziehen! Dann Enter drücken.
+    *   **Beispiel Windows:** Wenn du einen Ordner "Projekte" direkt auf Laufwerk C: erstellt hast, tippe: `cd C:\Projekte` und drücke Enter. Wenn er in deinen Dokumenten liegt: `cd C:\Users\[DeinBenutzername]\Documents\Projekte` (Ersetze `[DeinBenutzername]` durch deinen Windows-Benutzernamen).
+    *   **Beispiel Mac:** Wenn du einen Ordner "Projekte" in deinem Benutzerverzeichnis erstellt hast, tippe: `cd ~/Projekte` und drücke Enter. Wenn er in Dokumenten liegt: `cd ~/Documents/Projekte`.
+    *   *Tipp:* Du kannst oft auch `cd ` (mit Leerzeichen am Ende) tippen und dann den Ordner aus deinem Datei-Explorer (Finder auf Mac) direkt ins Terminal-Fenster ziehen! Dann Enter drücken.
 4.  **Projekt von GitHub kopieren (Klonen):**
-    *   Gehe zur GitHub-Seite dieses Projekts im Webbrowser.
-    *   Klicke auf den grünen Button, auf dem "<> Code" steht.
-    *   Kopiere die URL, die dort unter "HTTPS" angezeigt wird. Sie sieht etwa so aus: `https://github.com/Benutzername/Projektname.git`.
-    *   Gehe zurück zum Terminal (das immer noch im richtigen Ordner ist).
+    *   Gehe zur GitHub-Seite dieses Projekts im Webbrowser: [https://github.com/tcbob1994/binebastelt_neu](https://github.com/tcbob1994/binebastelt_neu)
+    *   Klicke dort auf den grünen Button, auf dem "<> Code" steht.
+    *   Kopiere die URL, die dort unter "HTTPS" angezeigt wird. Sie lautet: `https://github.com/tcbob1994/binebastelt_neu.git`
+    *   Gehe zurück zum Terminal (das immer noch im richtigen Ordner ist, z.B. "Projekte").
     *   Tippe den Befehl `git clone ` (achte auf das Leerzeichen nach `clone`) und füge dann die kopierte URL ein. Drücke Enter.
         ```bash
-        # Beispiel:
-        git clone https://github.com/Benutzername/Projektname.git
+        # Genau so eingeben:
+        git clone https://github.com/tcbob1994/binebastelt_neu.git
         ```
-    *   Git lädt nun das Projekt herunter. Es wird ein neuer Ordner mit dem Namen des Projekts (z.B. `Projektname`) in deinem ausgewählten Ordner erstellt.
+    *   Git lädt nun das Projekt herunter. Es wird ein neuer Ordner mit dem Namen `binebastelt_neu` in deinem ausgewählten Ordner (z.B. "Projekte") erstellt. Das ist unser Projektordner!
 
 ---
 
 ## Teil 3: Das Projekt vorbereiten ⚙️
 
-Fast geschafft! Jetzt müssen wir noch die ganzen Hilfsprogramme ("Pakete") installieren, die das Projekt zum Laufen braucht.
+Fast geschafft! Jetzt müssen wir noch die ganzen Hilfsprogramme ("Pakete") installieren, die das Projekt "binebastelt" zum Laufen braucht.
 
-1.  **In den Projektordner wechseln:** Im Terminal müssen wir jetzt in den Ordner *hinein* wechseln, der gerade durch `git clone` erstellt wurde.
+1.  **In den Projektordner wechseln:** Im Terminal müssen wir jetzt in den Ordner `binebastelt_neu` *hinein* wechseln, der gerade erstellt wurde.
     ```bash
-    # Ersetze [projekt-ordner-name] durch den tatsächlichen Namen des Ordners
-    cd [projekt-ordner-name]
+    # Wechsle in den neuen Ordner:
+    cd binebastelt_neu
     ```
-    *Du musst dich also im Terminal jetzt *innerhalb* des Projektordners befinden.*
+    *Du musst dich also im Terminal jetzt *innerhalb* des `binebastelt_neu`-Ordners befinden.*
 2.  **Pakete installieren:** Tippe den folgenden Befehl ein und drücke Enter. Das kann ein paar Minuten dauern, da `npm` nun alle benötigten Teile aus dem Internet herunterlädt (die Liste steht in der Datei `package.json`).
     ```bash
     npm install
@@ -111,11 +111,11 @@ Jetzt kommt der spannende Teil!
 1.  **Projekt in VS Code öffnen:**
     *   Starte Visual Studio Code.
     *   Gehe auf "Datei" (oder "File") -> "Ordner öffnen..." (oder "Open Folder...").
-    *   Navigiere zu dem Ordner, in den du das Projekt geklont hast (z.B. `C:\Projekte\[projekt-ordner-name]` oder `~/Projekte/[projekt-ordner-name]`) und wähle ihn aus. Klicke auf "Ordner auswählen".
-    *   VS Code zeigt dir nun links die Ordnerstruktur und die Dateien des Projekts an.
+    *   Navigiere zu dem Ordner, in den du das Projekt geklont hast (also der Ordner `binebastelt_neu`, z.B. in `C:\Projekte\binebastelt_neu` oder `~/Projekte/binebastelt_neu`) und wähle diesen Ordner aus. Klicke auf "Ordner auswählen".
+    *   VS Code zeigt dir nun links die Ordnerstruktur und die Dateien des Projekts `binebastelt_neu` an.
 2.  **Entwicklungsserver starten:**
-    *   Wir brauchen wieder das Terminal. Du kannst das gleiche Terminal-Fenster wie vorher benutzen (stelle sicher, dass du immer noch *im* Projektordner bist!).
-    *   *Alternativ:* VS Code hat ein eingebautes Terminal! Du kannst es öffnen über das Menü "Terminal" -> "Neues Terminal" (oder "New Terminal"). Es öffnet sich dann unten in VS Code und ist automatisch schon im richtigen Projektordner. Praktisch! 👍
+    *   Wir brauchen wieder das Terminal. Du kannst das gleiche Terminal-Fenster wie vorher benutzen (stelle sicher, dass du immer noch *im* `binebastelt_neu`-Ordner bist!).
+    *   *Alternativ:* VS Code hat ein eingebautes Terminal! Du kannst es öffnen über das Menü "Terminal" -> "Neues Terminal" (oder "New Terminal"). Es öffnet sich dann unten in VS Code und ist automatisch schon im richtigen Projektordner (`binebastelt_neu`). Praktisch! 👍
     *   Tippe im Terminal (egal ob das separate oder das in VS Code) den folgenden Befehl ein und drücke Enter:
         ```bash
         npm run dev
@@ -123,19 +123,19 @@ Jetzt kommt der spannende Teil!
 3.  **Webseite im Browser ansehen:**
     *   Nachdem du `npm run dev` ausgeführt hast, wird im Terminal eine lokale Adresse angezeigt, meistens so etwas wie `http://localhost:5173/`.
     *   Halte die `Strg`-Taste (Windows/Linux) oder `Cmd`-Taste (Mac) gedrückt und klicke auf diese Adresse im Terminal, oder kopiere sie und füge sie in die Adresszeile deines Webbrowsers ein.
-    *   Tada! 🎉 Du solltest jetzt die Webseite sehen.
+    *   Tada! 🎉 Du solltest jetzt die "binebastelt"-Webseite sehen, so wie sie auf deinem Computer läuft.
 4.  **Änderungen machen und live sehen:**
     *   Gehe zurück zu VS Code.
-    *   Links im Datei-Explorer findest du den Ordner `src`. Hier liegt der meiste Code, den du bearbeiten wirst.
-        *   **Komponenten (`.tsx`-Dateien):** Suche nach Ordnern wie `components`, `pages`, `views` oder direkt im `src`-Ordner nach Dateien, die auf `.tsx` enden. Das sind die Bausteine der Seite (z.B. ein Header, ein Button, ein Textabschnitt). Sie enthalten eine Mischung aus HTML-ähnlichem Code (das ist JSX) und JavaScript/TypeScript.
-        *   **Styling (Tailwind CSS):** Das Aussehen (Farben, Abstände, Größen) wird oft direkt im Code durch sogenannte "Klassen" gesteuert. Suche nach `className="..."` in den `.tsx`-Dateien. Beispiel: `<h1 className="text-blue-500 font-bold">Hallo</h1>` macht den Text blau und fett. Du änderst das Aussehen, indem du diese Klassen änderst oder hinzufügst. Eine Übersicht über alle möglichen Klassen findest du auf der [Tailwind CSS Webseite](https://tailwindcss.com/docs).
+    *   Links im Datei-Explorer findest du den Ordner `src`. Hier liegt der meiste Code, den du bearbeiten wirst (Texte, Struktur, etc.).
+        *   **Komponenten (`.tsx`-Dateien):** Suche nach Ordnern wie `components`, `pages`, `views` oder direkt im `src`-Ordner nach Dateien, die auf `.tsx` enden (z.B. `App.tsx`, `Header.tsx`, `Footer.tsx`). Das sind die Bausteine der Seite. Sie enthalten eine Mischung aus HTML-ähnlichem Code (das ist JSX) und JavaScript/TypeScript. Hier änderst du Texte oder fügst neue Elemente hinzu.
+        *   **Styling (Tailwind CSS):** Das Aussehen (Farben, Abstände, Größen) wird oft direkt im Code durch sogenannte "Klassen" gesteuert. Suche nach `className="..."` in den `.tsx`-Dateien. Beispiel: `<h1 className="text-blue-500 font-bold">Hallo</h1>` macht den Text blau und fett. Du änderst das Aussehen, indem du diese Klassen änderst oder hinzufügst (z.B. `text-red-600` für roten Text). Eine Übersicht über alle möglichen Klassen findest du auf der [Tailwind CSS Webseite](https://tailwindcss.com/docs) (super zum Nachschauen!).
         *   **Globale Stile:** Manchmal gibt es auch eine zentrale CSS-Datei, z.B. `src/index.css`, für grundlegende Stile.
-    *   **Probiere es aus:** Öffne eine `.tsx`-Datei (z.B. in `src/App.tsx` oder einer Komponente), ändere einen Text und speichere die Datei (`Strg+S` oder `Cmd+S`).
-    *   **Magie! ✨** Schau zurück in deinen Webbrowser. Die Seite sollte sich automatisch aktualisiert haben und deine Änderung anzeigen! Das nennt man "Hot Module Replacement" und macht das Entwickeln sehr angenehm.
+    *   **Probiere es aus:** Öffne eine `.tsx`-Datei (z.B. `src/App.tsx` oder eine Datei in `src/components/`), ändere einen sichtbaren Text (z.B. eine Überschrift) und speichere die Datei (`Strg+S` oder `Cmd+S`).
+    *   **Magie! ✨** Schau zurück in deinen Webbrowser (auf die `localhost:5173` Seite). Die Seite sollte sich automatisch aktualisiert haben und deine Änderung anzeigen! Das nennt man "Hot Module Replacement" und macht das Bearbeiten sehr angenehm.
 5.  **Entwicklungsserver stoppen:**
     *   Wenn du mit dem Bearbeiten für den Moment fertig bist, gehe zurück zum Terminal-Fenster (oder dem Terminal-Tab in VS Code), in dem `npm run dev` noch läuft.
     *   Drücke die Tastenkombination `Strg + C` (Control-Taste und C gleichzeitig). Manchmal musst du das zweimal machen oder mit `y` bestätigen.
-    *   Der Server stoppt, und die Webseite unter `localhost:xxxx` ist nicht mehr erreichbar, bis du `npm run dev` erneut startest.
+    *   Der Server stoppt, und die Webseite unter `localhost:5173` ist nicht mehr erreichbar, bis du `npm run dev` erneut startest.
 
 ---
 
@@ -143,35 +143,35 @@ Jetzt kommt der spannende Teil!
 
 Dieses Projekt verwendet ein Werkzeug namens ESLint, um sicherzustellen, dass der Code-Stil einheitlich ist und um häufige Fehler zu vermeiden.
 
-*   Wenn du in VS Code arbeitest, zeigt es dir wahrscheinlich schon während des Tippens an, wenn etwas nicht den Regeln entspricht (z.B. durch rote oder gelbe Unterkringelungen).
-*   Du kannst auch manuell alle Dateien prüfen lassen. Öffne dazu wieder das Terminal (im Projektordner) und führe aus:
+*   Wenn du in VS Code arbeitest, zeigt es dir wahrscheinlich schon während des Tippens an, wenn etwas nicht den Regeln entspricht (z.B. durch rote oder gelbe Unterkringelungen). Das ist sehr hilfreich!
+*   Du kannst auch manuell alle Dateien prüfen lassen. Öffne dazu wieder das Terminal (im `binebastelt_neu`-Ordner) und führe aus:
     ```bash
     npm run lint
     ```
-*   Das Programm listet dann alle gefundenen Probleme auf.
+*   Das Programm listet dann alle gefundenen Probleme auf. Oft musst du hier aber nichts machen, solange die Seite funktioniert.
 
 ---
 
 ## Teil 6 (Optional für später): Die fertige Webseite bauen 📦
 
-Wenn Änderungen fertig sind und die Webseite "live" gehen soll (also auf einem echten Server im Internet), muss man eine optimierte Version der Seite erstellen.
+Wenn Änderungen fertig sind und die Webseite "live" gehen soll (also auf der echten `binebastelt.de` Adresse aktualisiert werden soll), muss man eine optimierte Version der Seite erstellen.
 
-*   Öffne das Terminal (im Projektordner).
+*   Öffne das Terminal (im `binebastelt_neu`-Ordner).
 *   Führe den Befehl aus:
     ```bash
     npm run build
     ```
-*   Dieser Befehl erstellt einen neuen Ordner namens `dist`. Dieser Ordner enthält die "fertigen" Dateien (HTML, CSS, JS), die man dann auf einen Webserver hochladen kann. Das ist aber ein späterer Schritt, den wir dann besprechen können.
+*   Dieser Befehl erstellt einen neuen Ordner namens `dist`. Dieser Ordner enthält die "fertigen" Dateien (HTML, CSS, JS), die man dann auf einen Webserver hochladen kann. Das ist aber ein späterer Schritt, den wir dann besprechen können, wie genau das für `binebastelt.de` funktioniert.
 
 ---
 
 Puh, das war viel auf einmal! Aber keine Sorge, die meiste Zeit wirst du nur folgendes tun:
 
-1.  Projekt in VS Code öffnen.
+1.  Projekt `binebastelt_neu` in VS Code öffnen.
 2.  Terminal in VS Code öffnen (`Terminal` -> `Neues Terminal`).
 3.  `npm run dev` starten.
 4.  Dateien im `src`-Ordner bearbeiten und speichern.
-5.  Änderungen im Browser anschauen.
+5.  Änderungen im Browser auf `localhost:5173` anschauen.
 6.  Wenn fertig: `Strg + C` im Terminal.
 
-Nimm dir Zeit, probiere die Schritte aus. Wenn irgendetwas nicht klappt oder unklar ist, frag mich einfach! Es gibt keine dummen Fragen. Viel Spaß beim Ausprobieren und Bearbeiten! 😊
+Nimm dir Zeit, probiere die Schritte aus. Wenn irgendetwas nicht klappt oder unklar ist, frag mich einfach! Es gibt keine dummen Fragen. Viel Spaß beim Ausprobieren und Basteln an der Webseite! 😊
