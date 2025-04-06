@@ -1,11 +1,11 @@
-# binebastelt - Schritt-für-Schritt Anleitung für Vivien 👋
+# binebastelt - Schritt-für-Schritt Anleitung für Vivien (Windows) 👋
 
 Hallo Vivien,
 
-herzlich willkommen zu diesem Projekt! 😊 Keine Sorge, wenn Begriffe wie "Git", "npm" oder "Terminal" neu für dich sind. Diese Anleitung führt dich ganz genau durch jeden einzelnen Schritt, damit du die Webseite bearbeiten kannst. Wir machen das zusammen!
+herzlich willkommen zu diesem Projekt! 😊 Keine Sorge, wenn Begriffe wie "Git", "npm" oder "Terminal" neu für dich sind. Diese Anleitung führt dich ganz genau durch jeden einzelnen Schritt, damit du die Webseite mit deinem Windows-Computer bearbeiten kannst. Wir machen das zusammen!
 
 **Das Ziel:** Du sollst am Ende in der Lage sein:
-1.  Die notwendigen Programme auf deinem Computer zu installieren.
+1.  Die notwendigen Programme auf deinem Windows-Computer zu installieren.
 2.  Den Code der Webseite ("binebastelt") von GitHub herunterzuladen.
 3.  Die Webseite lokal auf deinem Computer zum Testen und Bearbeiten zu starten.
 4.  Zu verstehen, wo du Änderungen am Code (Texte, Bilder, Design) machen kannst.
@@ -23,9 +23,8 @@ Bevor wir mit der Webseite selbst anfangen können, brauchen wir ein paar kosten
 *   **Was ist das?** Node.js ist eine Umgebung, die es uns erlaubt, JavaScript-Code außerhalb des Webbrowsers auszuführen. `npm` (Node Package Manager) kommt automatisch mit Node.js und ist ein Werkzeug, um andere Hilfsprogramme und Code-Bibliotheken (genannt "Pakete" oder "dependencies"), die unser Projekt "binebastelt" braucht, einfach zu installieren und zu verwalten.
 *   **Anleitung:**
     *   Gehe zur offiziellen Webseite: [https://nodejs.org/](https://nodejs.org/)
-    *   Du solltest dort zwei Buttons sehen. Wähle die Version mit **"LTS"** (Long Term Support). Das ist die stabile, empfohlene Version.
-    *   Lade die Installationsdatei für dein Betriebssystem (Windows, Mac) herunter.
-    *   Öffne die heruntergeladene Datei und folge den Anweisungen des Installers. Du kannst normalerweise einfach immer auf "Weiter" oder "Agree" klicken.
+    *   Du solltest dort zwei Buttons sehen. Wähle die Version mit **"LTS"** (Long Term Support). Das ist die stabile, empfohlene Version. Klicke darauf, um den Windows Installer herunterzuladen.
+    *   Öffne die heruntergeladene `.msi`-Datei und folge den Anweisungen des Installers. Du kannst normalerweise einfach immer auf "Next" oder "Agree" klicken und die Standardeinstellungen beibehalten.
 *   **Überprüfung (optional, aber gut zu wissen):**
     *   Öffne das **Terminal** (siehe nächster Punkt, wie das geht).
     *   Gib `node -v` ein und drücke Enter. Es sollte eine Versionsnummer erscheinen (z.B. `v18.17.0`).
@@ -36,27 +35,24 @@ Bevor wir mit der Webseite selbst anfangen können, brauchen wir ein paar kosten
 *   **Was ist das?** Git ist ein System, das dabei hilft, Änderungen am Code über Zeit zu verfolgen und (in unserem Fall wichtig) Code von Online-Plattformen wie GitHub herunterzuladen ("klonen").
 *   **Anleitung:**
     *   Gehe zur offiziellen Webseite: [https://git-scm.com/downloads](https://git-scm.com/downloads)
-    *   Die Seite sollte dein Betriebssystem erkennen und den passenden Download anbieten. Klicke darauf.
-    *   Öffne die heruntergeladene Datei und folge den Installationsanweisungen. Auch hier sind die Standardeinstellungen meistens in Ordnung. Es gibt viele Optionen, aber du musst nichts Spezielles auswählen, klicke dich einfach durch.
+    *   Die Seite sollte "Windows" erkennen und einen Download-Link anbieten. Klicke darauf.
+    *   Öffne die heruntergeladene `.exe`-Datei und folge den Installationsanweisungen. Auch hier sind die Standardeinstellungen meistens in Ordnung. Es gibt viele Optionen während der Installation, aber du musst nichts Spezielles auswählen, klicke dich einfach mit "Next" durch.
 *   **Überprüfung (optional):**
     *   Öffne das **Terminal**.
-    *   Gib `git --version` ein und drücke Enter. Es sollte eine Versionsnummer erscheinen (z.B. `git version 2.40.0`).
+    *   Gib `git --version` ein und drücke Enter. Es sollte eine Versionsnummer erscheinen (z.B. `git version 2.40.0.windows.1`).
 
 **3. Visual Studio Code (VS Code) installieren (Unser Text-Editor für Code)**
 
 *   **Was ist das?** Ein kostenloser, sehr beliebter Code-Editor von Microsoft. Er hilft uns, den Code übersichtlich darzustellen, Fehler zu finden und vieles mehr. Es ist wie ein sehr schlaues Word für Programmiercode.
 *   **Anleitung:**
     *   Gehe zur offiziellen Webseite: [https://code.visualstudio.com/](https://code.visualstudio.com/)
-    *   Klicke auf den großen Download-Button (er sollte dein Betriebssystem erkennen).
-    *   Öffne die heruntergeladene Datei und installiere das Programm. Die Standardeinstellungen sind wieder okay.
+    *   Klicke auf den großen blauen Download-Button für Windows.
+    *   Öffne die heruntergeladene `.exe`-Datei und installiere das Programm. Die Standardeinstellungen sind wieder okay. Es ist nützlich, die Option "Zu PATH hinzufügen" (Add to PATH) während der Installation aktiviert zu lassen (ist meist Standard).
+*   **Wichtig: Das Terminal (Eingabeaufforderung / PowerShell)** 💻
 
-**Wichtig: Das Terminal (Kommandozeile)** 💻
+Wir brauchen für einige Schritte das "Terminal" (unter Windows ist das die "Eingabeaufforderung" oder moderner "PowerShell"). Das ist ein textbasiertes Fenster, in das wir Befehle eintippen.
 
-Wir brauchen für einige Schritte das "Terminal" (manchmal auch "Eingabeaufforderung", "Command Prompt" oder "Shell" genannt). Das ist ein textbasiertes Fenster, in das wir Befehle eintippen.
-
-*   **Öffnen unter Windows:** Drücke die `Windows-Taste`, tippe `cmd` oder `PowerShell` und drücke Enter. (PowerShell ist moderner).
-*   **Öffnen unter Mac:** Öffne den Ordner "Programme" -> "Dienstprogramme" -> "Terminal". Oder drücke `Cmd + Leertaste`, tippe `Terminal` und drücke Enter.
-*   **Öffnen unter Linux:** Meistens `Strg + Alt + T` oder über das Anwendungsmenü suchen.
+*   **Öffnen:** Drücke die `Windows-Taste` auf deiner Tastatur, tippe `cmd` (für die Eingabeaufforderung) oder `PowerShell` und drücke Enter. Beide funktionieren für unsere Zwecke.
 
 Du brauchst keine Angst davor zu haben! Wir benutzen nur ein paar wenige, einfache Befehle.
 
@@ -66,23 +62,23 @@ Du brauchst keine Angst davor zu haben! Wir benutzen nur ein paar wenige, einfac
 
 Jetzt holen wir uns den eigentlichen Code für die Webseite von GitHub auf deinen Computer.
 
-1.  **Ordner auswählen:** Überlege dir, wo auf deinem Computer du das Projekt speichern möchtest (z.B. in deinem "Dokumente"-Ordner oder du erstellst einen neuen Ordner namens "Projekte").
-2.  **Terminal öffnen:** Öffne das Terminal (wie oben beschrieben).
+1.  **Ordner auswählen:** Überlege dir, wo auf deinem Computer du das Projekt speichern möchtest. Gut geeignet ist z.B. dein "Dokumente"-Ordner oder du erstellst direkt auf deinem Laufwerk `C:` einen neuen Ordner namens `Projekte`.
+2.  **Terminal öffnen:** Öffne das Terminal (wie oben beschrieben, z.B. PowerShell).
 3.  **In den Ordner navigieren:** Wir müssen dem Terminal sagen, dass es in dem Ordner arbeiten soll, den du dir ausgesucht hast. Das geht mit dem Befehl `cd` (change directory).
-    *   **Beispiel Windows:** Wenn du einen Ordner "Projekte" direkt auf Laufwerk C: erstellt hast, tippe: `cd C:\Projekte` und drücke Enter. Wenn er in deinen Dokumenten liegt: `cd C:\Users\[DeinBenutzername]\Documents\Projekte` (Ersetze `[DeinBenutzername]` durch deinen Windows-Benutzernamen).
-    *   **Beispiel Mac:** Wenn du einen Ordner "Projekte" in deinem Benutzerverzeichnis erstellt hast, tippe: `cd ~/Projekte` und drücke Enter. Wenn er in Dokumenten liegt: `cd ~/Documents/Projekte`.
-    *   *Tipp:* Du kannst oft auch `cd ` (mit Leerzeichen am Ende) tippen und dann den Ordner aus deinem Datei-Explorer (Finder auf Mac) direkt ins Terminal-Fenster ziehen! Dann Enter drücken.
+    *   **Beispiel:** Wenn du einen Ordner "Projekte" direkt auf Laufwerk C: erstellt hast, tippe: `cd C:\Projekte` und drücke Enter.
+    *   **Beispiel:** Wenn du den Ordner "Projekte" in deinen Dokumenten erstellt hast, tippe: `cd C:\Users\[DeinBenutzername]\Documents\Projekte` (Ersetze `[DeinBenutzername]` durch deinen Windows-Benutzernamen) und drücke Enter.
+    *   *Tipp:* Du kannst oft auch `cd ` (mit Leerzeichen am Ende) tippen und dann den Ordner aus deinem Windows Explorer direkt ins Terminal-Fenster ziehen! Dadurch wird der Pfad automatisch eingefügt. Dann Enter drücken.
 4.  **Projekt von GitHub kopieren (Klonen):**
     *   Gehe zur GitHub-Seite dieses Projekts im Webbrowser: [https://github.com/tcbob1994/binebastelt_neu](https://github.com/tcbob1994/binebastelt_neu)
     *   Klicke dort auf den grünen Button, auf dem "<> Code" steht.
-    *   Kopiere die URL, die dort unter "HTTPS" angezeigt wird. Sie lautet: `https://github.com/tcbob1994/binebastelt_neu.git`
-    *   Gehe zurück zum Terminal (das immer noch im richtigen Ordner ist, z.B. "Projekte").
-    *   Tippe den Befehl `git clone ` (achte auf das Leerzeichen nach `clone`) und füge dann die kopierte URL ein. Drücke Enter.
+    *   Kopiere die URL, die dort unter "HTTPS" angezeigt wird. Sie lautet: `https://github.com/tcbob1994/binebastelt_neu.git` (Du kannst auf das kleine Kopieren-Symbol daneben klicken).
+    *   Gehe zurück zum Terminal (das immer noch im richtigen Ordner ist, z.B. `C:\Projekte`).
+    *   Tippe den Befehl `git clone ` (achte auf das Leerzeichen nach `clone`) und füge dann die kopierte URL ein (Rechtsklick im Terminal-Fenster fügt oft ein). Drücke Enter.
         ```bash
-        # Genau so eingeben:
+        # Genau so eingeben oder einfügen:
         git clone https://github.com/tcbob1994/binebastelt_neu.git
         ```
-    *   Git lädt nun das Projekt herunter. Es wird ein neuer Ordner mit dem Namen `binebastelt_neu` in deinem ausgewählten Ordner (z.B. "Projekte") erstellt. Das ist unser Projektordner!
+    *   Git lädt nun das Projekt herunter. Es wird ein neuer Ordner mit dem Namen `binebastelt_neu` in deinem ausgewählten Ordner (z.B. `C:\Projekte`) erstellt. Das ist unser Projektordner!
 
 ---
 
@@ -92,10 +88,10 @@ Fast geschafft! Jetzt müssen wir noch die ganzen Hilfsprogramme ("Pakete") inst
 
 1.  **In den Projektordner wechseln:** Im Terminal müssen wir jetzt in den Ordner `binebastelt_neu` *hinein* wechseln, der gerade erstellt wurde.
     ```bash
-    # Wechsle in den neuen Ordner:
+    # Wechsle in den neuen Ordner (wenn du z.B. in C:\Projekte warst):
     cd binebastelt_neu
     ```
-    *Du musst dich also im Terminal jetzt *innerhalb* des `binebastelt_neu`-Ordners befinden.*
+    *Der Pfad im Terminal sollte jetzt auf `...\binebastelt_neu` enden. Du musst dich also *innerhalb* des `binebastelt_neu`-Ordners befinden.*
 2.  **Pakete installieren:** Tippe den folgenden Befehl ein und drücke Enter. Das kann ein paar Minuten dauern, da `npm` nun alle benötigten Teile aus dem Internet herunterlädt (die Liste steht in der Datei `package.json`).
     ```bash
     npm install
@@ -109,20 +105,21 @@ Fast geschafft! Jetzt müssen wir noch die ganzen Hilfsprogramme ("Pakete") inst
 Jetzt kommt der spannende Teil!
 
 1.  **Projekt in VS Code öffnen:**
-    *   Starte Visual Studio Code.
-    *   Gehe auf "Datei" (oder "File") -> "Ordner öffnen..." (oder "Open Folder...").
-    *   Navigiere zu dem Ordner, in den du das Projekt geklont hast (also der Ordner `binebastelt_neu`, z.B. in `C:\Projekte\binebastelt_neu` oder `~/Projekte/binebastelt_neu`) und wähle diesen Ordner aus. Klicke auf "Ordner auswählen".
+    *   Starte Visual Studio Code (z.B. über das Startmenü).
+    *   Gehe auf "Datei" -> "Ordner öffnen...".
+    *   Navigiere zu dem Ordner, in den du das Projekt geklont hast (also der Ordner `binebastelt_neu`, z.B. in `C:\Projekte\binebastelt_neu`) und wähle diesen Ordner aus. Klicke auf "Ordner auswählen".
     *   VS Code zeigt dir nun links die Ordnerstruktur und die Dateien des Projekts `binebastelt_neu` an.
 2.  **Entwicklungsserver starten:**
-    *   Wir brauchen wieder das Terminal. Du kannst das gleiche Terminal-Fenster wie vorher benutzen (stelle sicher, dass du immer noch *im* `binebastelt_neu`-Ordner bist!).
-    *   *Alternativ:* VS Code hat ein eingebautes Terminal! Du kannst es öffnen über das Menü "Terminal" -> "Neues Terminal" (oder "New Terminal"). Es öffnet sich dann unten in VS Code und ist automatisch schon im richtigen Projektordner (`binebastelt_neu`). Praktisch! 👍
+    *   Wir brauchen wieder das Terminal. Du kannst das gleiche Terminal-Fenster wie vorher benutzen (stelle sicher, dass du immer noch *im* `binebastelt_neu`-Ordner bist! Der Pfad sollte dort noch stimmen).
+    *   *Alternativ und empfohlen:* VS Code hat ein eingebautes Terminal! Du kannst es öffnen über das Menü "Terminal" -> "Neues Terminal". Es öffnet sich dann unten in VS Code und ist automatisch schon im richtigen Projektordner (`binebastelt_neu`). Praktisch! 👍
     *   Tippe im Terminal (egal ob das separate oder das in VS Code) den folgenden Befehl ein und drücke Enter:
         ```bash
         npm run dev
         ```
 3.  **Webseite im Browser ansehen:**
     *   Nachdem du `npm run dev` ausgeführt hast, wird im Terminal eine lokale Adresse angezeigt, meistens so etwas wie `http://localhost:5173/`.
-    *   Halte die `Strg`-Taste (Windows/Linux) oder `Cmd`-Taste (Mac) gedrückt und klicke auf diese Adresse im Terminal, oder kopiere sie und füge sie in die Adresszeile deines Webbrowsers ein.
+    *   Halte die `Strg`-Taste auf deiner Tastatur gedrückt und klicke auf diese Adresse im Terminal. Dein Standard-Webbrowser sollte sich öffnen und die Seite anzeigen.
+    *   Alternativ: Kopiere die Adresse (`http://localhost:5173/`) und füge sie manuell in die Adresszeile deines Webbrowsers (Chrome, Firefox, Edge, ...) ein.
     *   Tada! 🎉 Du solltest jetzt die "binebastelt"-Webseite sehen, so wie sie auf deinem Computer läuft.
 4.  **Änderungen machen und live sehen:**
     *   Gehe zurück zu VS Code.
@@ -130,11 +127,11 @@ Jetzt kommt der spannende Teil!
         *   **Komponenten (`.tsx`-Dateien):** Suche nach Ordnern wie `components`, `pages`, `views` oder direkt im `src`-Ordner nach Dateien, die auf `.tsx` enden (z.B. `App.tsx`, `Header.tsx`, `Footer.tsx`). Das sind die Bausteine der Seite. Sie enthalten eine Mischung aus HTML-ähnlichem Code (das ist JSX) und JavaScript/TypeScript. Hier änderst du Texte oder fügst neue Elemente hinzu.
         *   **Styling (Tailwind CSS):** Das Aussehen (Farben, Abstände, Größen) wird oft direkt im Code durch sogenannte "Klassen" gesteuert. Suche nach `className="..."` in den `.tsx`-Dateien. Beispiel: `<h1 className="text-blue-500 font-bold">Hallo</h1>` macht den Text blau und fett. Du änderst das Aussehen, indem du diese Klassen änderst oder hinzufügst (z.B. `text-red-600` für roten Text). Eine Übersicht über alle möglichen Klassen findest du auf der [Tailwind CSS Webseite](https://tailwindcss.com/docs) (super zum Nachschauen!).
         *   **Globale Stile:** Manchmal gibt es auch eine zentrale CSS-Datei, z.B. `src/index.css`, für grundlegende Stile.
-    *   **Probiere es aus:** Öffne eine `.tsx`-Datei (z.B. `src/App.tsx` oder eine Datei in `src/components/`), ändere einen sichtbaren Text (z.B. eine Überschrift) und speichere die Datei (`Strg+S` oder `Cmd+S`).
+    *   **Probiere es aus:** Öffne eine `.tsx`-Datei (z.B. `src/App.tsx` oder eine Datei in `src/components/`), ändere einen sichtbaren Text (z.B. eine Überschrift) und speichere die Datei (Tastenkombination `Strg + S`).
     *   **Magie! ✨** Schau zurück in deinen Webbrowser (auf die `localhost:5173` Seite). Die Seite sollte sich automatisch aktualisiert haben und deine Änderung anzeigen! Das nennt man "Hot Module Replacement" und macht das Bearbeiten sehr angenehm.
 5.  **Entwicklungsserver stoppen:**
     *   Wenn du mit dem Bearbeiten für den Moment fertig bist, gehe zurück zum Terminal-Fenster (oder dem Terminal-Tab in VS Code), in dem `npm run dev` noch läuft.
-    *   Drücke die Tastenkombination `Strg + C` (Control-Taste und C gleichzeitig). Manchmal musst du das zweimal machen oder mit `y` bestätigen.
+    *   Drücke die Tastenkombination `Strg + C` (Control-Taste und C gleichzeitig). Manchmal musst du noch mit `J` (für Ja) oder `Y` (für Yes) bestätigen und Enter drücken, wenn gefragt wird, ob der Batchauftrag beendet werden soll.
     *   Der Server stoppt, und die Webseite unter `localhost:5173` ist nicht mehr erreichbar, bis du `npm run dev` erneut startest.
 
 ---
@@ -170,7 +167,7 @@ Puh, das war viel auf einmal! Aber keine Sorge, die meiste Zeit wirst du nur fol
 1.  Projekt `binebastelt_neu` in VS Code öffnen.
 2.  Terminal in VS Code öffnen (`Terminal` -> `Neues Terminal`).
 3.  `npm run dev` starten.
-4.  Dateien im `src`-Ordner bearbeiten und speichern.
+4.  Dateien im `src`-Ordner bearbeiten und mit `Strg + S` speichern.
 5.  Änderungen im Browser auf `localhost:5173` anschauen.
 6.  Wenn fertig: `Strg + C` im Terminal.
 
