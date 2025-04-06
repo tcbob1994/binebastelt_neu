@@ -3,13 +3,29 @@
 @tailwind utilities;
 
 @layer base {
-  body {
-    @apply bg-[#212D40] text-white;
-  }
+    body {
+        @apply bg-[#212D40] text-white;
+    }
 }
 
 @layer components {
-  .container {
-    @apply max-w-7xl mx-auto;
-  }
+    .container {
+        @apply max-w-7xl mx-auto;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.3s ease-out forwards;
 }

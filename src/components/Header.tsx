@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Instagram, Atom as Tiktok, Youtube, ShoppingBag } from 'lucide-react';
-import { Palette } from 'lucide-react';
+import { Instagram, Youtube, ShoppingBag } from 'lucide-react';
+import { AiFillTikTok } from "react-icons/ai";
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -24,9 +24,11 @@ const Header = () => {
           <div className={`transition-all duration-300 ${
             scrolled ? 'scale-75' : 'scale-100'
           }`}>
-            <Palette 
+            <img 
+              src="images/logo.png" 
+              alt="Logo" 
               className="text-[#D66853]" 
-              size={scrolled ? 36 : 48} 
+              style={{ width: scrolled ? '36px' : '48px', height: 'auto' }} 
             />
           </div>
           
@@ -45,7 +47,7 @@ const Header = () => {
               rel="noopener noreferrer"
               className="text-[#D66853] hover:text-[#7D4E57] transition-colors duration-300"
             >
-              <Tiktok size={24} />
+              <AiFillTikTok size={24} />
             </a>
             <a 
               href="https://www.youtube.com/@binebastelt" 
