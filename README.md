@@ -1,6 +1,6 @@
-# [Projektname] - Schritt-für-Schritt Anleitung für [Name der Freundin] 👋
+# binebastelt - Schritt-für-Schritt Anleitung für Vivien 👋
 
-Hallo [Name der Freundin],
+Hallo Vivien,
 
 herzlich willkommen zu diesem Projekt! 😊 Keine Sorge, wenn Begriffe wie "Git", "npm" oder "Terminal" neu für dich sind. Diese Anleitung führt dich ganz genau durch jeden einzelnen Schritt, damit du die Webseite bearbeiten kannst. Wir machen das zusammen!
 
